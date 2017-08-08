@@ -178,7 +178,11 @@ var infowindow = new google.maps.InfoWindow({size: new google.maps.Size(150,50)}
 	clickable: false,
         map: map
      });
-
+  function key_down(e) {
+         if(e.keyCode === 13) {
+           codeAddress();
+         }
+       }
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
   var places = [];
