@@ -4,26 +4,12 @@
   <meta charset="utf-8">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
   <meta content='width=device-width, initial-scale=1' name='viewport'/>
-	<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:700|Amatic+SC:700" rel="stylesheet" type="text/css" />
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style>
 <style type="text/css">
-h1{
-  font-family: 'Amatic SC';
-}
-
-
-
-h2{
-  font-family: 'Amatic SC';
-}
-h3{
-  font-family: 'Amatic SC';
-}
 .jumbotron{
    /*background-image: url(Charity4All_Logo_Resized.png);
    min-height: 300px;*/
@@ -108,9 +94,6 @@ table {
 <style type="text/css">
 #search-box
      {
-      font-family: 'Josefin Sans';
-       color:black;
-       padding: 5px;
        float: right;
        margin-bottom: 0em;
      }
@@ -127,7 +110,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Josefin Sans';
+  font-family: 'Amatic SC';
   font-size: 22px;
 }
 
@@ -178,11 +161,7 @@ var infowindow = new google.maps.InfoWindow({size: new google.maps.Size(150,50)}
 	clickable: false,
         map: map
      });
-  function key_down(e) {
-         if(e.keyCode === 13) {
-           codeAddress();
-         }
-       }
+
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
   var places = [];
@@ -474,12 +453,6 @@ function codeAddress()
       #target {
         width: 345px;
       }
-      #mybutton{
-        background-color: black;
-        padding: 5px;
-        border: white;
-        color: white;
-      }
     </style>
   <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/19/infowindow.js"></script><style type="text/css">.gm-style {
         font: 400 11px 'Amatic SC';
@@ -552,7 +525,7 @@ function codeAddress()
               </ul>
               <form action="https://www.google.com" method="get" id="search-box" align="right" ><font color = "black">
                 <input type="text" class="search" name="q" size="15" maxlength="120" placeholder="search..."></font>
-                <input id= "mybutton" type="submit" class="button" value="go">
+                <input type="submit" class="button" value="go">
               </form>
             </div>
           </div>
