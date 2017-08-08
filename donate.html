@@ -15,9 +15,9 @@
 h1{
   font-family: 'Amatic SC';
 }
-.button{
-  background-color: black;
-}
+
+
+
 h2{
   font-family: 'Amatic SC';
 }
@@ -108,6 +108,9 @@ table {
 <style type="text/css">
 #search-box
      {
+      font-family: 'Josefin Sans';
+       color:black;
+       padding: 5px;
        float: right;
        margin-bottom: 0em;
      }
@@ -467,6 +470,11 @@ function codeAddress()
       #target {
         width: 345px;
       }
+      #mybutton{
+        background-color: black;
+        padding: 5px;
+        border: white;
+      }
     </style>
   <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/28/19/infowindow.js"></script><style type="text/css">.gm-style {
         font: 400 11px 'Amatic SC';
@@ -539,7 +547,7 @@ function codeAddress()
               </ul>
               <form action="https://www.google.com" method="get" id="search-box" align="right" ><font color = "black">
                 <input type="text" class="search" name="q" size="15" maxlength="120" placeholder="search..."></font>
-                <input type="submit" class="button" value="go">
+                <input id= "mybutton" type="submit" class="button" value="go">
               </form>
             </div>
           </div>
